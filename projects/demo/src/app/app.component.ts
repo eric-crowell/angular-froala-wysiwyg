@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup, Validators} from '@angular/forms';
 
 import FroalaEditor from 'froala-editor';
 
@@ -185,9 +185,9 @@ export class AppComponent implements OnInit {
 
   // Sample 9
   formControls = {
-    formModel: new FormControl('Hello World', Validators.minLength(2)),
+    formModel: new UntypedFormControl('Hello World', Validators.minLength(2)),
   };
-  form = new FormGroup(this.formControls);
+  form = new UntypedFormGroup(this.formControls);
   get formModel(): any { return this.form.get('formModel'); }
   onSubmit(): void {
     console.log(this.form.value);
@@ -195,8 +195,8 @@ export class AppComponent implements OnInit {
   setValue() { this.form.setValue({formModel: 'Default text'}); }
 
   // Sample 10
-  form2 = new FormGroup({
-    formModel: new FormControl('Hello World', Validators.minLength(2)),
+  form2 = new UntypedFormGroup({
+    formModel: new UntypedFormControl('Hello World', Validators.minLength(2)),
   });
   get form2Model(): any { return this.form2.get('formModel'); }
   onSubmit2(): void {

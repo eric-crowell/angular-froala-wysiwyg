@@ -10,7 +10,7 @@
     ],
     "module": "esnext",
     "moduleResolution": "node",
-    "target": "es2015",
+    "target": "es2020",
     "baseUrl": ".",
     "sourceMap": true,
     "typeRoots": [

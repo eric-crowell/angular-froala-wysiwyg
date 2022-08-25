@@ -83,7 +83,6 @@
       "projectType": "application"
     }
   },
-  "defaultProject": "angular-froala-wysiwyg-demo",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "",
