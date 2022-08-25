@@ -2,7 +2,6 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "declaration": false,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noEmitHelpers" :true,
     "lib": ["es6", "dom"],
